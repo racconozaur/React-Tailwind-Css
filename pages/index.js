@@ -36,10 +36,10 @@ export default function Home() {
 
         <section className='min-h-screen'>
           <nav className=' py-10 mb-12 flex justify-between'>
-            <h1 className=' text-xl font-burtons' >Nickname</h1>
+            <h1 className=' text-xl font-burtons dark:text-slate-50'>Nickname</h1>
             <ul className=' flex items-center'>
               <li>
-                <BsFillMoonStarsFill className=' cursor-pointer text-2xl' onClick={darkModeHandler}/>
+                <BsFillMoonStarsFill className=' cursor-pointer text-2xl dark:text-slate-50' onClick={darkModeHandler}/>
               </li>
               <li><a className=' bg-gradient-to-r from-cyan-500 to-teal-500 text-white px-4 py-2 rounded-md ml-8' href='#'>Resume</a></li>
             </ul>
@@ -47,35 +47,35 @@ export default function Home() {
 
           <div className=' text-center p-10'>
             <h2 className=' text-5xl py-2 text-teal-600 font-medium'>Name Surename</h2>
-            <h3 className=' text-2xl py2'>Developer and designer.</h3>
-            <p className=' text-md py-5 leading-8 text-gray-800'>
+            <h3 className=' text-2xl py2 mt-5 dark:text-slate-50'>Developer and designer.</h3>
+            <p className=' text-md py-5 leading-8 text-gray-800 dark:text-gray-300'>
               Lorem ipsum dolor sit amet, consectetur adipiscing elit, 
               sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
             </p>
           </div>
 
-          <div className=' text-5xl flex justify-center gap-16 py-3 text-gray-600'>
+          <div className=' relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-5 overflow-hidden'>
+            <Image src={Avatar} alt='avatar' layout='fill' objectFit='cover'/>
+          </div>
+
+          <div className=' text-5xl flex justify-center gap-16 py-3 mt-8 text-gray-600 dark:text-white'>
             <AiFillTwitterCircle className=' cursor-pointer'/>
             <AiFillLinkedin className=' cursor-pointer'/>
             <AiFillGithub className=' cursor-pointer'/>
-          </div>
-
-          <div className=' relative mx-auto bg-gradient-to-b from-teal-500 rounded-full w-80 h-80 mt-20 overflow-hidden'>
-            <Image src={Avatar} alt='avatar' layout='fill' objectFit='cover'/>
           </div>
 
         </section>
 
         <section>
           <div >
-            <h3 className=' text-3xl py-3'>Services I Offer</h3>
-            <p className=' text-md py-2 leading-8 text-gray-800'>
+            <h3 className=' text-3xl py-3 dark:text-slate-100'>Services I Offer</h3>
+            <p className=' text-md py-2 leading-8 text-gray-800 dark:text-slate-200'>
               Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut 
               aliquip ex ea commodo consequat. <span className=' text-teal-500'>Duis</span> aute irure dolor in reprehenderit in 
               voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
             </p>
               
-            <p className=' text-md py-2 leading-8 text-gray-800'>
+            <p className=' text-md py-2 leading-8 text-gray-800 dark:text-slate-200'>
               Excepteur sint occaecat cupidatat non proident, sunt in 
               culpa qui <span className=' text-teal-500'>officia</span> deserunt mollit anim id est laborum.
             </p>
